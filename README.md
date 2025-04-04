@@ -1,3 +1,40 @@
+PHP version 8.2
+composer version 2.8.4
+
+Step 1
+composer install
+
+Step 2
+database config in env file
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel_db
+DB_USERNAME=root
+DB_PASSWORD=
+
+php artisan key:generate
+
+Step 3
+CREATE DATABASE laravel_db;
+
+Step 4
+php artisan migrate
+
+Step 5
+php artisan serve
+
+Step 6
+php artisan schedule:work
+To run scheduler locally everyminute
+
+Step 7
+To view tasks list
+In browser go to link http://127.0.0.1:8000/tasks
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
